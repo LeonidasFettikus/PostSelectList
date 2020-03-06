@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post">
+    <input id="string-value" />
+    <input type="button" id="add-item" value="Add item" />
+    <select asp-items="@Model.Model.ArrayOfStrings" id="hidden-select"></select>
+    <table id="table-items">
+
+    </table>
+    <input type="submit" value="Submit" />
+</form>
